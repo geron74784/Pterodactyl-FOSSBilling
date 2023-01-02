@@ -1,0 +1,12 @@
+{
+    "id":           "pterodactyl",
+    "type":         "mod",
+    "name":         "Pterodactyl",
+    "description":  "",
+    "icon_url":     "icon.png",
+    "project_url":  "",
+    "author":       "",
+    "author_url":   "",
+    "license":      "GPLv2",
+    "version":      "0.0.1"
+}
