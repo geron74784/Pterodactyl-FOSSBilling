@@ -15,3 +15,21 @@
 </ul>
 
 {% endblock %}
+
+{% block content %}
+
+<div class="widget">
+    <div class="head">
+        <h5 class="iCog">{{ 'Pterodactyl Module Settings' | trans }}</h5>
+    </div>
+	
+  {% set params = admin.extension_config_get({"ext":"mod_pterodactyl"}) %}
+
+  <form method="post" action="{{ 'api/admin/extension/config_save' | link }}" class="mainForm api-form" data-api-msg="{{ 'Configuration updated' | trans }}">
+
+      <div class="help">
+          <h3>{{ 'Pterodactyl Module Settings' | trans }}</h3>
+          <p>{{ 'There are a couple of things you need to specify before you can sell servers' | trans }}</p>
+      </div>
+
+{% endblock %}
