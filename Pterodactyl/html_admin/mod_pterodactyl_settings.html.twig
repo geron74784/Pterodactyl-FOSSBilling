@@ -26,6 +26,7 @@
   {% set params = admin.extension_config_get({"ext":"mod_pterodactyl"}) %}
 
   <form method="post" action="{{ 'api/admin/extension/config_save' | link }}" class="mainForm api-form" data-api-msg="{{ 'Configuration updated' | trans }}">
+  	<input type="hidden" name="CSRFToken" value="{{ CSRFToken }}"/>
 
       <div class="help">
           <h3>{{ 'Pterodactyl Module Settings' | trans }}</h3>
