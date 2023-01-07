@@ -32,4 +32,27 @@
           <p>{{ 'There are a couple of things you need to specify before you can sell servers' | trans }}</p>
       </div>
 
+      <fieldset>
+          <div class="rowElem noborder">
+              <label>{{ 'API Key' | trans }}</label>
+              <div class="formRight">
+                  <input type="text" name="api_key" value="{{params.api_key}}" placeholder="{{ 'API Key' | trans }}"/>
+              </div>
+              <div class="fix"></div>
+          </div>
+
+          <div class="rowElem noborder">
+              <label>{{ 'Panel Base URL' | trans }}</label>
+              <div class="formRight">
+                  <input type="text" name="panel_url" value="{{params.panel_url}}" placeholder="{{ 'https://panel.example.com' | trans }}"/>
+              </div>
+              <div class="fix"></div>
+          </div>
+
+          <input type="submit" value="{{ 'Update' | trans }}" class="greyishBtn submitForm" />
+          <input type="hidden" name="ext" value="mod_pterodactyl" />
+      </fieldset>
+  </form>
+</div>
+
 {% endblock %}
