@@ -1,5 +1,5 @@
 <?php
-namespace Box\Mod\Pterodactyl\Controller;
+namespace Box\Mod\Servicepterodactyl\Controller;
 
 class Admin implements \Box\InjectionAwareInterface
 {
