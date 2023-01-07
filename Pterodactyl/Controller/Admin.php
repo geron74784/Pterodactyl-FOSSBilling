@@ -35,7 +35,7 @@ class Admin implements \Box\InjectionAwareInterface
                     'location'  => 'pterodactyl',       // place this module in extensions group
                     'label'     => 'Pterodactyl Configuration',
                     'index'     => 1500,
-                    'uri'       => $this->di['url']->adminLink('pterodactyl'),
+                    'uri'       => $this->di['url']->adminLink('servicepterodactyl'),
                     'class'     => '',
                 ),
             ),
