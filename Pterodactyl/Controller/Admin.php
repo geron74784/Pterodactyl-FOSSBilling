@@ -50,6 +50,6 @@ class Admin implements \Box\InjectionAwareInterface
   	public function get_index(\Box_App $app)
     {
         $this->di['is_admin_logged'];
-        return $app->render('mod_pterodactyl_index');
+        return $app->render('mod_servicepterodactyl_index');
     }
 }
