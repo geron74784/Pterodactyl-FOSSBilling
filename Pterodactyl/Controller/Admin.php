@@ -44,7 +44,7 @@ class Admin implements \Box\InjectionAwareInterface
   
   	public function register(\Box_App &$app)
     {
-        $app->get('/pterodactyl',             'get_index', array(), get_class($this));
+        $app->get('/servicepterodactyl',             'get_index', array(), get_class($this));
     }
   
   	public function get_index(\Box_App $app)
