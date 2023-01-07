@@ -1,5 +1,5 @@
 <?php
-namespace Box\Mod\Pterodactyl;
+namespace Box\Mod\Servicepterodactyl;
 
 class Service implements \Box\InjectionAwareInterface
 {
