@@ -1,7 +1,7 @@
 <?php
 namespace Box\Mod\Pterodactyl;
 
-class Service
+class Service implements \Box\InjectionAwareInterface
 {
   	protected $di;
 
