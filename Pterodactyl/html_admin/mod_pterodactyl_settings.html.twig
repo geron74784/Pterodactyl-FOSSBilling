@@ -1,1 +1,17 @@
+{% extends request.ajax ? "layout_blank.html.twig" : "layout_default.html.twig" %}
 
+{% import "macro_functions.html.twig" as mf %}
+
+{% block meta_title %}{{ 'Pterodactyl Module Settings' | trans }}{% endblock %}
+
+{% set active_menu = 'system' %}
+
+{% block breadcrumbs %}
+
+<ul>
+    <li class="firstB"><a href="{{ '/' | alink }}">{{ 'Home' | trans }}</a></li>
+    <li><a href="{{ 'system' | alink }}">{{ 'Settings' | trans }}</a></li>
+    <li class="lastB">{{ 'Pterodactyl Module Settings' | trans }}</li>
+</ul>
+
+{% endblock %}
